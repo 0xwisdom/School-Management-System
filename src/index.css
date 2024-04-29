@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+:root {
+  --background-color: aliceblue;
+  --white-color: #fff;
+  --black-color: black;
+}
+body {
+  background-color: var(--background-color);
+}
+table {
+  width: 100%;
+  padding-bottom: 0.8cm;
+  align-items: center;
+  border-collapse: collapse;
+}
+.Table,
+aside {
+  background-color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  padding: 0.3cm 0.8cm 0.2cm 0.8cm;
+}
+
+aside {
+  flex-direction: row;
+  font-size: 13pt;
+  justify-content: space-between;
+}
+.Table__class-info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.2cm 0 0.4cm 0;
+}
+.table-body td {
+  border-bottom: 1px solid grey;
+  text-align: center;
+  font-size: 14pt;
+  padding: 0.4cm;
+}
+thead {
+  font-weight: bold;
+  font-size: 14pt;
+  text-transform: uppercase;
+}
+.picture {
+  width: 30px;
+}
+.delete,
+.edit {
+  width: 0.8cm;
+  height: 1cm;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+}
+.edit {
+  background-color: blue;
+  margin-left: 0.2cm;
+}
+h3 {
+  font-size: 20pt;
+  display: flex;
+  align-items: left;
+}
+#class-select {
+  width: 4cm;
+  height: 1cm;
+  margin-bottom: 0.3cm;
+  display: flex;
+  align-items: left;
+  background-color: grey;
+  color: var(--white-color);
+  border-radius: 5px;
+  border: none;
+  font-size: 14pt;
+}
+.Table__class-info {
+  font-size: 14pt;
+}
+.Table__class-info p select {
+  width: 1.3cm;
+  height: 0.8cm;
+  margin: 0 0.2cm 0 0.2cm;
+}
+.Table__class-info p input {
+  height: 0.8cm;
+}
+.next {
+  width: 0.8cm;
+  height: 0.8cm;
+  background: none;
+  border: none;
+}
+.copyright {
+  margin-top: 0.7cm;
+}
+
+.edit svg {
+  color: red;
+}
